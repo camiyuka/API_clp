@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Status do CLP</title>
+    <link rel="stylesheet" href="api_model.css">    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Red+Hat+Display:wght@300&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <style>
+        body{
+            font-family: 'Roboto Mono', monospace; 
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #ae4b97;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            border: None;
+            padding: 1em;
+        }
+    </style>
+    
+    <div class="container">
+        <h1>Status do CLP </h1>
+            <p><b>Sensor:</b> <span id="sensorStatus">{{api_models.sensor}}</span></p>
+            <p><b>Botão</b> <span id="botaoStatus">{{api_model.botao}}</span></p>
+            <p><b> Robô:</b> <span id="roboStatus">{{api_model.liga_robo}}</span></p>
+            <p><b> Valor da contagem:</b> <span id="valorContagem">{{valor_contagem}}</span></p>
+            <button id="resetContador" class="button">Resetar Contador</button>
+    </div>
+
+</body>
+</html>
